@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Rahil.com</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.assetsdelivery.com/compings_v2/wikagraphic/wikagraphic2103/wikagraphic210309168.jpg"
+                    alt="" width="50" height="40" style="border-radius:50%">
+            </a>
+            <a class="navbar-brand" href="#">Rahil.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topic
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web development</a></li>
+                            <li><a class="dropdown-item" href="#">code</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Upadate Profile</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+                <div class="sig mx-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-warning " data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+
+    <!-- login Modal -->
+    <div class="modal fade " id="LoginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Rahil.com</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form action="#">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Username">
+                                <div class="input-group-text fa-solid fa-key" style="text-align:center;"></div>
+                                <input type="password" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="password">
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signupmodel -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup to Rahil.com</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">*OTP</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- youtube section  -->
+    <div class="container my-4">
+        <div class="ratio ratio-21x9 border border-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RGJuM6FDj_o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+        <p class="fs-1">What is Website | Web page | Type Of Websites in Hindi | Beginners</p>
+    </div>
+    <!-- info section  -->
+    <div class="main">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-5 fw-normal text-info"><u>Create a Free Website</u></h1>
+            <h3 class="display-6  text-secondary">Everything you need right in the browser.</h3>
+            <p class="fs-5 text-muted text-primary">Build your own website with rahil.com Spaces. It is easy to use - try it!
+            </p>
+        </div>
+    </div>
+    <div class="container2">
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-success">Sign up for free</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Get started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+                        <div class="card-header py-3 text-white bg-success border-secondary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 users included</li>
+                                <li>15 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Free</th>
+                            <th style="width: 22%;">Pro</th>
+                            <th style="width: 22%;">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Public</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Private</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#check"></use>
+                                </svg></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <hr class="featurette-divider">
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 Rahil.com privacy terms, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

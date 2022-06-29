@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Rahil.com</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://images.assetsdelivery.com/compings_v2/wikagraphic/wikagraphic2103/wikagraphic210309168.jpg"
+          alt="" width="50" height="40" style="border-radius:50%">
+      </a>
+      <a class="navbar-brand" href="#">Rahil.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" href="index.html">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topic
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Web development</a></li>
+              <li><a class="dropdown-item" href="#">code</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">start</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Upadate Profile</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+
+        </form>
+        <div class="sig mx-2">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- news nav  -->
+  <header class="navbar-light fixed-top-12 header-static bg-mode">
+
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo START -->
+        <a class="navbar-brand" href="index.html">
+          <!-- <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"> -->
+          <i class="fa-solid fa-bullhorn light-mode-item navbar-brand-item"></i>
+          <!-- <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">  -->
+          
+        </a>
+        <!-- Logo END -->
+  
+        <!-- Responsive navbar toggler -->
+        <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+  
+        <!-- Main navbar START -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+          <!-- Nav Search START -->
+          <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+            <div class="nav-item w-100">
+              <form class="rounded position-relative">
+                
+                <input class="form-control ps-5 bg-light " type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit"><i class="fa-solid fa-magnifying-glass"> </i></button>
+              </form>
+            </div>
+          </div>
+          <!-- Nav Search END -->
+  
+          <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <!-- Nav item 1 Demos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demo</a>
+              <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                <li> <a class="dropdown-item" href="index.html">Home default</a></li>
+                <li> <a class="dropdown-item" href="index-classic.html">Home classic</a></li>
+                <li> <a class="dropdown-item" href="index-post.html">Home post</a></li>
+                <li> <a class="dropdown-item" href="index-video.html">Home video</a></li>
+                <li> <a class="dropdown-item" href="index-event.html">Home event</a></li>
+                <li> <a class="dropdown-item" href="landing.html">Landing page</a></li>
+                <li> <a class="dropdown-item" href="app-download.html">App download</a></li>
+                <li class="dropdown-divider"></li>
+                <li> 
+                  <a class="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
+                    <i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Social!
+                  </a> 
+                </li>
+              </ul>
+            </li>
+            <!-- Nav item 2 Pages -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                <li> <a class="dropdown-item" href="albums.html">Albums</a></li>
+                <li> <a class="dropdown-item" href="celebration.html">Celebration</a></li>
+                <li> <a class="dropdown-item" href="messaging.html">Messaging</a></li>
+                <!-- Dropdown submenu -->
+                <li class="dropdown-submenu dropend"> 
+                  <a class="dropdown-item dropdown-toggle" href="#!">Profile</a>
+                  <ul class="dropdown-menu" data-bs-popper="none">
+                    <li> <a class="dropdown-item" href="my-profile.html">Feed</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-about.html">About</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-connections.html">Connections</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-media.html">Media</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-videos.html">Videos</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-events.html">Events</a> </li>
+                    <li> <a class="dropdown-item" href="my-profile-activity.html">Activity</a> </li>
+                  </ul>
+                </li>
+                <li> <a class="dropdown-item" href="events.html">Events</a></li>
+                <li> <a class="dropdown-item" href="events-2.html">Events 2</a></li>
+                <li> <a class="dropdown-item" href="event-details.html">Event details</a></li>
+                <li> <a class="dropdown-item" href="event-details-2.html">Event details 2</a></li>
+                <li> <a class="dropdown-item" href="groups.html">Groups</a></li>
+                <li> <a class="dropdown-item" href="group-details.html">Group details</a></li>
+                <li> <a class="dropdown-item" href="post-videos.html">Post videos</a></li>
+                <li> <a class="dropdown-item" href="post-video-details.html">Post video details</a></li>
+                <li> <a class="dropdown-item" href="post-details.html">Post details</a></li>
+                <li> <a class="dropdown-item" href="video-details.html">Video details</a></li>
+                <li> <a class="dropdown-item" href="blog.html">Blog</a></li>
+                <li> <a class="dropdown-item" href="blog-details.html">Blog details</a></li>
+                
+                <!-- Dropdown submenu levels -->
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-submenu dropend">
+                  <a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+                  <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                    <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                    <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                    <!-- dropdown submenu open left -->
+                    <li class="dropdown-submenu dropstart">
+                      <a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
+                      <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                        <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                      </ul>
+                    </li>
+                    <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+  
+            <!-- Nav item 3 Post -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account </a>
+              <ul class="dropdown-menu" aria-labelledby="postMenu">
+                <li> <a class="dropdown-item" href="create-page.html">Create a page</a></li>
+                <li> <a class="dropdown-item" href="settings.html">Settings</a> </li>
+                <li> <a class="dropdown-item" href="notifications.html">Notifications</a> </li>
+                <li> <a class="dropdown-item" href="help.html">Help center</a> </li>
+                <li> <a class="dropdown-item" href="help-details.html">Help details</a> </li>
+                <!-- dropdown submenu open left -->
+                <li class="dropdown-submenu dropstart">
+                  <a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
+                  <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
+                    <li> <a class="dropdown-item" href="sign-in.html">Sign in</a> </li>
+                    <li> <a class="dropdown-item" href="sign-up.html">Sing up</a> </li>
+                    <li> <a class="dropdown-item" href="forgot-password.html">Forgot password</a> </li>
+                    <li class="dropdown-divider"></li>
+                    <li> <a class="dropdown-item" href="sign-in-advance.html">Sign in advance</a> </li>
+                    <li> <a class="dropdown-item" href="sign-up-advance.html">Sing up advance</a> </li>
+                    <li> <a class="dropdown-item" href="forgot-password-advance.html">Forgot password advance</a> </li>
+                  </ul>
+                </li>
+                <li> <a class="dropdown-item" href="error-404.html">Error 404</a> </li>
+                <li> <a class="dropdown-item" href="offline.html">Offline</a> </li>
+                <li> <a class="dropdown-item" href="privacy-and-terms.html">Privacy &amp; terms</a> </li>
+              </ul>
+            </li>
+  
+            <!-- Nav item 4 Mega menu -->
+            <li class="nav-item">
+              <a class="nav-link" href="my-profile-connections.html">My network</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main navbar END -->
+  
+        <!-- Nav right START -->
+        <ul class="nav flex-nowrap align-items-center ms-sm-3 list-unstyled">
+          <li class="nav-item ms-2">
+            <a class="nav-link icon-md btn btn-light p-0" href="messaging.html">
+              <i class="bi bi-chat-left-text-fill fs-6"> </i>
+            </a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link icon-md btn btn-light p-0" href="settings.html">
+              <i class="bi bi-gear-fill fs-6"> </i>
+            </a>
+          </li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link icon-md btn btn-light p-0" href="#" id="notifDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              <span class="badge-notif animation-blink"></span>
+              <i class="bi bi-bell-fill fs-6"> </i>
+            </a>
+            <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0" aria-labelledby="notifDropdown">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <h6 class="m-0">Notifications <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
+                  <a class="small" href="#">Clear all</a>
+                </div>
+                <div class="card-body p-0">
+                  <ul class="list-group list-group-flush list-unstyled p-2">
+                    <!-- Notif item -->
+                    <li>
+                      <div class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3">
+                          <div class=" d-flex">
+                          <p class="small mb-2"><b>Judy Nguyen</b> sent you a friend request.</p>
+                          <p class="small ms-3 text-nowrap">Just now</p>
+                        </div>
+                        <div class="d-flex">
+                          <button class="btn btn-sm py-1 btn-primary me-2">Accept </button>
+                          <button class="btn btn-sm py-1 btn-danger-soft">Delete </button>
+                        </div>
+                      </div>
+                    </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <div class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <div>
+                            <p class="small mb-2">Wish <b>Amanda Reed</b> a happy birthday (Nov 12)</p>
+                            <button class="btn btn-sm btn-outline-light py-1 me-2">Say happy birthday 🎂</button>
+                          </div>
+                          <p class="small ms-3">2min</p>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <a href="#" class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <div class="avatar-img rounded-circle bg-success"><span class="text-white position-absolute top-50 start-50 translate-middle fw-bold">WB</span></div>
+                        </div>
+                        <div class="ms-sm-3">
+                          <div class="d-flex">
+                            <p class="small mb-2">Webestica has 15 like and 1 new activity</p>
+                            <p class="small ms-3">1hr</p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Notif item -->
+                    <li>
+                      <a href="#" class="list-group-item list-group-item-action rounded d-flex border-0 p-3 mb-1">
+                        <div class="avatar text-center d-none d-sm-inline-block">
+                          <img class="avatar-img rounded-circle" src="assets/images/logo/12.svg" alt="">
+                        </div>
+                        <div class="ms-sm-3 d-flex">
+                          <p class="small mb-2"><b>Bootstrap in the news:</b> The search giant’s parent company, Alphabet, just joined an exclusive club of tech stocks.</p>
+                          <p class="small ms-3">4hr</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-sm btn-primary-soft">See all incoming activity</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Notification dropdown END -->
+  
+          <li class="nav-item ms-2 dropdown">
+            <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="avatar-img rounded-2" src="assets/images/avatar/07.jpg" alt="">
+            </a>
+            <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3" aria-labelledby="profileDropdown">
+              <!-- Profile info -->
+              <li class="px-3">
+                <div class="d-flex align-items-center position-relative">
+                  <!-- Avatar -->
+                  <div class="avatar me-3">
+                    <img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg" alt="avatar">
+                  </div>
+                  <div>
+                    <a class="h6 stretched-link" href="#">Lori Ferguson</a>
+                    <p class="small m-0">Web Developer</p>
+                  </div>
+                </div>
+                <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center" href="my-profile.html">View profile</a>
+              </li>
+              <!-- Links -->
+              <li><a class="dropdown-item" href="settings.html"><i class="bi bi-gear fa-fw me-2"></i>Settings &amp; Privacy</a></li>
+              <li> 
+                <a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
+                  <i class="fa-fw bi bi-life-preserver me-2"></i>Support
+                </a> 
+              </li>
+              <li> 
+                <a class="dropdown-item" href="docs/index.html" target="_blank">
+                  <i class="fa-fw bi bi-card-text me-2"></i>Documentation
+                </a> 
+              </li>
+              <li class="dropdown-divider"></li>
+              <li><a class="dropdown-item bg-danger-soft-hover" href="sign-in-advance.html"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+              <li> <hr class="dropdown-divider"></li>
+              <!-- Dark mode switch START -->
+              <li>
+                <div class="modeswitch-wrap" id="darkModeSwitch">
+                  <div class="modeswitch-item">
+                    <div class="modeswitch-icon"></div>
+                  </div>
+                  <span>Dark mode</span>
+                </div>
+              </li> 
+              <!-- Dark mode switch END -->
+            </ul>
+          </li>
+          <!-- Profile START -->
+          
+        </ul>
+        <!-- Nav right END -->
+      </div>
+    </nav>
+    <!-- Logo Nav END -->
+  </header>
+
+
+  <!-- login Modal -->
+  <div class="modal fade " id="LoginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Rahil.com</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <form action="#">
+            <div class="col-12">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                <div class="input-group-text fa-solid fa-key" style="text-align:center;"></div>
+                <input type="password" class="form-control" id="inlineFormInputGroupUsername" placeholder="password">
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signupmodel -->
+   <div class="container">
+    <div class="col-lg-8">
+        <div class="bg-mode p-4">
+          <h1 class="h4 mb-4">Latest blogs</h1>
+          <!-- Blog item START -->
+          <div class="card bg-transparent border-0">
+            <div class="row g-3">
+              <div class="col-4">
+                <!-- Blog image -->
+                <img class="rounded" src="https://source.unsplash.com/250x200/?productivity,app" alt="" width="250" height="200">
+              </div>
+              <div class="col-8">
+                <!-- Blog caption -->
+                <a href="#" class="badge bg-danger bg-opacity-10 text-danger mb-2 fw-bold">Lifestyle</a>
+                <h5><a href="#" class="btn-link stretched-link text-reset fw-bold">Social guides the way in 2022 app performance report</a></h5>
+                <div class="d-none d-sm-inline-block">
+                  <p class="mb-2">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+                  <!-- BLog date -->
+                  <a class="small text-secondary" href="#!"> <i class="bi bi-calendar-date pe-1"></i> Jan 22, 2022</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog item END -->
+          <hr class="my-4">
+          <!-- Blog item START -->
+          <div class="card bg-transparent border-0">
+            <div class="row g-3">
+              <div class="col-4">
+                <!-- Blog image -->
+                <img class="rounded" src="https://source.unsplash.com/250x200/?productivity,video" alt="#">
+              </div>
+              <div class="col-8">
+                <!-- Blog caption -->
+                <a href="#" class="badge bg-info bg-opacity-10 text-info mb-2 fw-bold">Sports</a>
+                <h5><a href="blog-details.html" class="btn-link stretched-link text-reset fw-bold">Upcoming live video feed may not work how you expect</a></h5>
+                <div class="d-none d-sm-inline-block">
+                  <p class="mb-2">Under folly balls, death own point now men. Match way these she avoids seeing death.</p>
+                  <!-- BLog date -->
+                  <a class="small text-secondary" href="#!"> <i class="bi bi-calendar-date pe-1"></i> Mar 07, 2022</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog item END -->
+          <hr class="my-4">
+          <!-- Blog item START -->
+          <div class="card bg-transparent border-0">
+            <div class="row g-3">
+              <div class="col-4">
+                <!-- Blog image -->
+                <img class="rounded" src="https://source.unsplash.com/250x200/?technology,google" alt="">
+              </div>
+              <div class="col-8">
+                <!-- Blog caption -->
+                <a href="#" class="badge bg-success bg-opacity-10 text-success mb-2 fw-bold">Business</a>
+                <h5><a href="blog-details.html" class="btn-link stretched-link text-reset fw-bold">Google shares top search trends of 2022</a></h5>
+                <div class="d-none d-sm-inline-block">
+                  <p class="mb-2">I think on style child of. Servants moreover in sensible it ye possible six say his. </p>
+                  <!-- BLog date -->
+                  <a class="small text-secondary" href="#!"> <i class="bi bi-calendar-date pe-1"></i> Jun 17, 2022</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog item END -->
+          <hr class="my-4">
+          <!-- Blog item START -->
+          <div class="card bg-transparent border-0">
+            <div class="row g-3">
+              <div class="col-4">
+                <!-- Blog image -->
+                <img class="rounded" src="https://source.unsplash.com/250x200/?technology,instagram" alt="">
+              </div>
+              <div class="col-8">
+                <!-- Blog caption -->
+                <a href="#" class="badge bg-warning bg-opacity-10 text-warning mb-2 fw-bold">Technology</a>
+                <h5><a href="blog-details.html" class="btn-link stretched-link text-reset fw-bold">Counts reels replies, delivering another way to tap into the video</a></h5>
+                <div class="d-none d-sm-inline-block">
+                  <p class="mb-2">Placing forming nay looking old married few has. Margaret disposed of add screened rendered. </p>
+                  <!-- BLog date -->
+                  <a class="small text-secondary" href="#!"> <i class="bi bi-calendar-date pe-1"></i> Nov 11, 2022</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog item END -->
+          <!-- Pagination -->
+          <div class="mt-4">
+            <nav aria-label="navigation">
+              <ul class="pagination pagination-light d-inline-block d-md-flex justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#">Prev</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+   </div>
+  <hr class="featurette-divider">
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2021–2022 Rahil.com privacy terms, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
